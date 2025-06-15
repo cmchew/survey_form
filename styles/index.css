@@ -1,5 +1,20 @@
 /* GLOBAL RESET & BASE STYLES */
 
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #2e0854;
+  background: #fff;
+  padding: 1rem;
+}
+
 /* Navigation */
 .navbar {
   display: flex;
@@ -8,6 +23,29 @@
   border-bottom: 2px solid #eee;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rebeccapurple;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rebeccapurple;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 /* FORM INTRO BOX */

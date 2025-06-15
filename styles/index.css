@@ -43,6 +43,12 @@ select {
   margin-bottom: 1rem;
 }
 
+.form-control label {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-weight: bold; /* Makes labels bold */
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;

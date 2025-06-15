@@ -1,102 +1,52 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Stutern Feedback/Survey Form</title>
-
-    <link rel="stylesheet" href="styles/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stutern Feedback/Survey Form</title>
+  <link rel="stylesheet" href="styles/index.css" />
 </head>
 
 <body>
-    <!-- FORM -->
-    <section>
+  <section>
 
-        <form>
-            <div class="form-control">
-                <label>First name </label>
-                <input type="text">
-            </div>
-            <div class="form-control">
-                <label>Last name </label>
-                <input type="text">
-            </div>
-            <div class="form-control">
-                <label>Email address </label>
-                <input type="email">
-            </div>
-            <div class="form-control">
-                <label>Phone number </label>
-                <input type="number">
-            </div>
-            <div class="form-control">
-                <label>What track do you belong to? </label>
-                <select class='select-track'>
-                    <option value="frontend">Front End</option>
-                    <option value="backend">Back End</option>
-                    <option value="software-testing"> Software Testing</option>
-                    <option value="data-science"> Data Science</option>
-                    <option value="mobile-apps">Mobile Apps</option>
-                </select>
-            </div>
+    <!-- 🌟 Introductory Paragraphs -->
+    <div class="form-intro" style="max-width: 600px; margin: 0 auto 2rem auto; padding: 0 1rem;">
+      <p>We value your feedback! This short survey will help us understand your experience with the Stutern program and how we can improve.</p>
+      <p>Your responses are confidential and will only be used to enhance the quality of training and support we provide.</p>
+    </div>
 
-            <div class="form-control">
-                <label for="occupation"> Select which best describes you</label>
-                <input type="radio" name="occupation" /> <span>Student</span>
-                <input type="radio" name="occupation" /> <span>Working Class</span>
-                <input type="radio" name="occupation" /> <span>Self Employed</span>
+    <!-- 📝 Form Begins -->
+    <form>
+      <div class="form-control">
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name" required />
+      </div>
 
-            </div>
+      <div class="form-control">
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
 
-            <div class="form-control">
-                <label>Would you recommend Stutern to a friend?</label>
-                <!-- <label> -->
-                <input type="radio" /><span for="yes">Yes</label>
-                    <input type="radio">No</input>
-                    <!-- </label> -->
-            </div>
+      <div class="form-control">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
 
-            <div class="form-control">
-                <label>What technologies are you now familiar with?</label>
-                <input type="checkbox">Git</input>
-                <input type="checkbox">HTML</input>
-                <input type="checkbox">CSS</input>
-                <input type="checkbox">JavaScript</input>
-                <input type="checkbox">React</input>
-                <input type="checkbox">Python</input>
-                <input type="checkbox">TypeScript</input>
-            </div>
+      <div class="form-control">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
 
-            <div class="form-control">
-                <label>Any feedback for the Stutern team?</label>
-                <textarea cols="10" rows="4"></textarea>
-            </div>
-
-            <div class="form-control">
-                <button>
-                    Submit feedback
-                </button>
-            </div>
-
-
-
-
-        </form>
-    </section>
-</body>
-
-</html>
-
-<!-- 
-    First name, <input type text>
-    Last name,  <input type text>
-    Email address  <input type email>
-    Phone number  <input type tel/number/ text>
-    What track do you belong to? radio / select 
-    Select which best describes you: Student / Working class:  radio / select
-    Would you recommend Stutern to a friend? / text / radio
-    What technologies are you now familiar with? checkbox / text
-    Any feedback for the Stutern team? textarea / text
-    Submit feedback i:button / button
-
- -->
+      <div class="form-control">
+        <label for="track">What track do you belong to?</label>
+        <select id="track" name="track" class="select-track" required>
+          <option value="">-- Select Track --</option>
+          <option value="frontend">Front End</option>
+          <option value="backend">Back End</option>
+          <option value="software-testing">Software Testing</option>
+          <option value="data-science">Data Science</option>
+          <option value="mobile-apps">Mobile Apps</option>
+        </select>
+      </div

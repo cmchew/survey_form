@@ -1,5 +1,15 @@
 /* GLOBAL RESET & BASE STYLES */
 
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
 /* FORM INTRO BOX */
 .form-intro {
   background-color: #f5f5f5;

@@ -28,7 +28,7 @@ html {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   font-size: 16px;
-  font-color: white;
+
 }
 
 *,
@@ -83,7 +83,7 @@ input[type="checkbox"] {
 
 /* SURVEY FORM STYLES */
 form {
-  background-color: rebeccapurple;
+  background-color: thistle;
   max-width: 37.5rem; /* 600px */
   margin: 0 auto;
   padding: 2rem;

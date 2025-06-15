@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reader Feedback Survey Form</title>
+  <title>Stutern Feedback/Survey Form</title>
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 
@@ -49,4 +49,42 @@
           <option value="data-science">Data Science</option>
           <option value="mobile-apps">Mobile Apps</option>
         </select>
-      </div
+      </div>
+
+      <div class="form-control">
+        <label>Select which best describes you:</label>
+        <label><input type="radio" name="occupation" value="student" /> Student</label>
+        <label><input type="radio" name="occupation" value="working-class" /> Working Class</label>
+        <label><input type="radio" name="occupation" value="self-employed" /> Self Employed</label>
+      </div>
+
+      <div class="form-control">
+        <label>Would you recommend Stutern to a friend?</label>
+        <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+        <label><input type="radio" name="recommend" value="no" /> No</label>
+      </div>
+
+      <div class="form-control">
+        <label>What technologies are you now familiar with?</label>
+        <label><input type="checkbox" name="tech[]" value="Git" /> Git</label>
+        <label><input type="checkbox" name="tech[]" value="HTML" /> HTML</label>
+        <label><input type="checkbox" name="tech[]" value="CSS" /> CSS</label>
+        <label><input type="checkbox" name="tech[]" value="JavaScript" /> JavaScript</label>
+        <label><input type="checkbox" name="tech[]" value="React" /> React</label>
+        <label><input type="checkbox" name="tech[]" value="Python" /> Python</label>
+        <label><input type="checkbox" name="tech[]" value="TypeScript" /> TypeScript</label>
+      </div>
+
+      <div class="form-control">
+        <label for="feedback">Any feedback for the Stutern team?</label>
+        <textarea id="feedback" name="feedback" rows="4"></textarea>
+      </div>
+
+      <div class="form-control">
+        <button type="submit">Submit Feedback</button>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

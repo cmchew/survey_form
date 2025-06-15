@@ -1,3 +1,39 @@
+/* Site Header */
+.site-header {
+  background-color: rebeccapurple;
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.site-header .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
 /* GLOBAL RESET & BASE STYLES */
 
 /* Base Styles */
@@ -13,16 +49,6 @@ body {
   color: #2e0854;
   background: #fff;
   padding: 1rem;
-}
-
-/* Navigation */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
 }
 
 .logo {

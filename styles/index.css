@@ -30,7 +30,9 @@
   text-decoration: none;
   font-weight: 500;
 }
-
+.spacer {
+  height: 2rem;
+}
 .main-nav a:hover {
   text-decoration: underline;
 }
